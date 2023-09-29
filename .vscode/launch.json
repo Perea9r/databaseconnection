@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsumeApplication<consume>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.ruben.consume.ConsumeApplication",
+            "projectName": "consume",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DatabaseconnectionApplication<databaseconnection>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.ruben.databaseconnection.DatabaseconnectionApplication",
+            "projectName": "databaseconnection",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
