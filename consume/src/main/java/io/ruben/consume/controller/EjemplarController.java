@@ -15,9 +15,9 @@ public class EjemplarController {
     @Autowired
     EjemplarService service;
 
-    @PostMapping(value="ejemplar/{isbn}/{nombre}/{duracion}/{precio}")
-    public List<Ejemplar> altaEjemplar(@PathVariable int isbn, @PathVariable String nombre, @PathVariable int duracion, @PathVariable int precio){
-        Ejemplar ejemplar = new Ejemplar(isbn, nombre, duracion, precio);
+    @PostMapping(value="ejemplar/{isbn}/{nombre}/{paginas}/{precio}")
+    public List<Ejemplar> altaEjemplar(@PathVariable int isbn, @PathVariable String nombre, @PathVariable int paginas, @PathVariable int precio){
+        Ejemplar ejemplar = new Ejemplar(isbn, nombre, paginas, precio);
         return service.nuevoEjemplar(ejemplar);
     }
 }

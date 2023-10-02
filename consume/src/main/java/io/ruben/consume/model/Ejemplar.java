@@ -11,17 +11,17 @@ public class Ejemplar {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int isbn;
     private String nombre;
-    private int duracion;
+    private int paginas;
     private int precio;
 
     public Ejemplar() {
 
     }
 
-    public Ejemplar(int isbn, String nombre, int duracion, int precio) {
+    public Ejemplar(int isbn, String nombre, int paginas, int precio) {
         this.isbn = isbn;
         this.nombre = nombre;
-        this.duracion = duracion;
+        this.paginas = paginas;
         this.precio = precio;
     }
 
@@ -41,12 +41,12 @@ public class Ejemplar {
         this.nombre = nombre;
     }
 
-    public int getDuracion() {
-        return duracion;
+    public int getPaginas() {
+        return paginas;
     }
 
-    public void setDuracion(int duracion) {
-        this.duracion = duracion;
+    public void setPaginas(int paginas) {
+        this.paginas = paginas;
     }
 
     public int getPrecio() {

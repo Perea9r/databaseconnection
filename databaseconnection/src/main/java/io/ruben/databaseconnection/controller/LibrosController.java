@@ -34,7 +34,7 @@ public class LibrosController {
         service.altaLibro(libro);
     }
 
-    @PutMapping(value="/libro/{isbn}/{duracion}" , consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PutMapping(value="/libro/{isbn}/{paginas}" , consumes = MediaType.APPLICATION_JSON_VALUE)
     public void actualizar(@RequestBody Libro libro){
         service.actualizarLibro(libro);
     }
