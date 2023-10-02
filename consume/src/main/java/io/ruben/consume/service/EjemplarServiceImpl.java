@@ -15,7 +15,7 @@ public class EjemplarServiceImpl implements EjemplarService {
     @Autowired
     RestTemplate template;
 
-    private String url = "http://localhost:8080/libros";
+    private String url = "http://localhost:8080/";
     @Override
     public List<Ejemplar> nuevoEjemplar(Ejemplar ejemplar){
         template.postForLocation(url+ "libro", ejemplar);
